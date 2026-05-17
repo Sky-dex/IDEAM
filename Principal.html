@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Datos </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1> Datos de temperatura </h1>
+    <div class="botones">
+    <button onclick="mostrarDatos('temperatura')">Temperatura</button>   
+    <button onclick="exportarExcel()">Exportar a Excel</button>
+    <button onclick="tomarFoto()">Tomar Foto</button>
+    </div>
+
+
+    <div class="contenedor-multimedia">
+            <video id="video" autoplay playsinline></video>
+            <img id="foto" alt="" class="foto-oculta">
+        </div>
+        
+        <div class="caja-foto">
+            <img id="foto" alt="">
+        </div>
+    </div>
+
+    <canvas id="canvas" style="display:none;"></canvas>
+    
+    
+
+    <table id="tabla"></table>
+    <canvas id="grafica"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="codigo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@builderbot/clout-client@latest/dist/bundle.js"
+    data-token="bb-cea503d6-96e7-4fac-8c83-4b90263fe745"></script>
+</body>
+</html>
